@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>CaContact — Démonstration du service d’appel Android</title>
+    <style>
+      :root { color-scheme: light; font: 16px/1.55 system-ui, sans-serif; }
+      body { max-width: 48rem; margin: 3rem auto; padding: 0 1rem; color: #18233b; }
+      h1 { line-height: 1.2; }
+      video { display: block; width: min(100%, 24rem); margin: 1.5rem auto; background: #111; }
+      .note { padding: 1rem; border-left: 4px solid #1565c0; background: #f2f7ff; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>CaContact — service de premier plan pour les appels</h1>
+      <p>
+        Cette vidéo montre un appel VoIP entrant dans CaContact et la notification
+        Android visible qui accompagne l’appel pendant son traitement. CaContact
+        utilise l’API Android Telecom pour gérer l’état de l’appel et son service
+        de premier plan de type <code>phoneCall</code> pour maintenir cette session
+        d’appel active lorsque l’agent ne manipule pas directement l’écran.
+      </p>
+      <p>
+        La recette démarre un appel entrant, affiche les commandes de réponse,
+        de raccrochage et de sourdine, puis termine l’appel. Le scénario utilise
+        un pair SIP local et des données de test synthétiques ; il ne contient
+        aucun appel ni dossier client.
+      </p>
+      <video controls playsinline preload="metadata">
+        <source src="cacontact-phone-call-demo.mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <p class="note">
+        Démonstration technique destinée à l’examen Google Play de l’autorisation
+        Android <code>FOREGROUND_SERVICE_PHONE_CALL</code>.
+      </p>
+      <hr>
+      <h2>English summary</h2>
+      <p>
+        This recording demonstrates CaContact handling an incoming VoIP call
+        with Android Telecom and a visible <code>phoneCall</code> foreground
+        service. The test uses a synthetic local SIP peer and synthetic data;
+        it contains no customer calls or records.
+      </p>
+    </main>
+  </body>
+</html>
